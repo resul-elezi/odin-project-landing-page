@@ -96,18 +96,36 @@ linksDiv.appendChild(headerLinkThree);
 
 // Hero Section
 function heroSection() {
-    let hero = document.createElement('section');
-    hero.style.background = "#1f2937";
-    hero.style.width = "100%";
-    hero.style.height = "29.1875rem";
-    return hero;
+    let heroS = document.createElement('section');
+    heroS.style.background = "#1f2937";
+    heroS.style.width = "100%";
+    // heroS.style.margin = "0";
+    return heroS;
 }
-let section = heroSection();
+let hero = heroSection();
+
+// Hero Heading
+function heroHeading(text) {
+    let heading = document.createElement('h1');
+    heading.style.color = "#f9faf8";
+    heading.style.fontSize = "3rem";
+    heading.innerText = text;
+    // heading.style.margin = "0";
+    return heading;
+}
+// let heroH = heroHeading();
+let headingText = heroHeading("This Website is awesome");
+
 
 // Adding Elements to the Navigation Bar
 nav.appendChild(logoD);
 nav.appendChild(linksDiv);
 
+// Adding Elements to the Hero Section
+hero.appendChild(headingText);
+
+
+
 // Adding Navigation Bar and Hero Section to the Body
 document.body.appendChild(nav);
-document.body.appendChild(section);
+document.body.appendChild(hero);

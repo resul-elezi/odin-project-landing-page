@@ -2,7 +2,7 @@
 
 // ------------- Body --------------
 function webPage(page) {
-    page.style.margin = "0";
+    page.style.margin = "0 auto";
     page.style.padding = "0";
     page.style.maxWidth = "90rem";
 }

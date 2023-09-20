@@ -1,13 +1,14 @@
 'use strict';
 
-// Body
+// ------------- Body --------------
 function webPage(page) {
     page.style.margin = "0";
     page.style.padding = "0";
+    page.style.maxWidth = "90rem";
 }
 webPage(document.body);
 
-// NavBar
+// ------------ NavBar -----------
 function navBar() {
     let navigation = document.createElement('nav');
     navigation.style.background = "#1f2937";
@@ -27,8 +28,9 @@ function logoDiv() {
     div.style.width = "50%";
     div.style.height = "100%";
     div.style.display = "flex"
-    div.style.justifyContent = "center";
+    div.style.justifyContent = "flex-start";
     div.style.alignItems = "center";
+    div.style.paddingLeft = "13.125rem";
     return div;
 }
 let logoD = logoDiv();
@@ -48,8 +50,9 @@ function navLinkDiv() {
     div.style.width = "50%";
     div.style.height = "100%";
     div.style.display = "flex"
-    div.style.justifyContent = "center";
+    div.style.justifyContent = "flex-end";
     div.style.alignItems = "center";
+    div.style.paddingRight = "13.125rem";
     div.style.gap = "1.5rem";
     return div;
 }
@@ -94,13 +97,15 @@ linksDiv.appendChild(headerLinkThree);
 
 
 
-// Hero Section
+// -------------- Hero Section ---------------------------
 function heroSection() {
     let heroS = document.createElement('section');
     heroS.style.background = "#1f2937";
     heroS.style.width = "100%";
+    heroS.style.paddingTop = "5.9375rem"
+    heroS.style.paddingBottom = "8.125rem";
     heroS.style.display = "flex";
-    heroS.style.justifyContent = "space-around";
+    heroS.style.justifyContent = "center";
     heroS.style.alignContent = "center";
     return heroS;
 }
@@ -109,7 +114,8 @@ let hero = heroSection();
 function heroDivLeft() {
     let divL = document.createElement('div');
     divL.style.background = "#1f2937";
-    // divL.style.width = "50%";
+    divL.style.paddingLeft = "13.125rem";
+    divL.style.width = "50%";
     return divL;
 }
 let heroDivL = heroDivLeft();
@@ -138,7 +144,9 @@ let heroPar = heroParagraph("This website has some subtext that goes here under 
 
 function heroButton(text) {
     let btn = document.createElement('button');
+    btn.setAttribute("type", "submit");
     btn.style.backgroundColor = "#3882f6";
+    btn.style.cursor = "pointer";
     btn.style.color = "white";
     btn.style.border = "none";
     btn.style.fontSize = "1.125rem";
@@ -152,19 +160,59 @@ let heroBtn = heroButton("Sing Up");
 function heroDivRight() {
     let divR = document.createElement('div');
     divR.style.background = "#1f2937";
-    // divR.style.width = "50%";
+    divR.style.paddingRight = "13.125rem";
+    divR.style.width = "50%";
     return divR;
 }
 let heroDivR = heroDivRight();
 
 function heroDivRightImg() {
     let img = document.createElement('img');
-    img.setAttribute("src", "https://picsum.photos/520");
+    img.setAttribute("src", "https://picsum.photos/seed/picsum/520/235");
+    img.setAttribute("alt", "Random Image");
+    img.style.maxWidth = "100%";
     img.style.width = "100%";
-    img.style.maxHeight = "14.6875rem"
     return img;
 }
 let imgHeroRight = heroDivRightImg();
+
+
+// -------------- Main Section ---------------------------
+
+function mainS() {
+    let main = document.createElement('main');
+    main.style.width = "100%";
+    return main;
+}
+let mainSection = mainS();
+
+// Main Section Top 
+
+function mainDivT() {
+    let main = document.createElement('div');
+    main.style.width = "100%";
+    main.style.display = "flex";
+    main.style.justifyContent = "centre";
+    main.style.flexDirection = "column";
+    main.style.alignItems = "center";
+    return main;
+}
+let mainDivTop = mainDivT();
+
+function mainDivTopH(text) {
+    let heading = document.createElement('h3');
+    heading.style.color = "#1f2937"
+    heading.style.fontSize = "2.25rem";
+    heading.innerText = text;
+    return heading;
+}
+let mainTitle = mainDivTopH("Some random information.");
+
+// Adding Elements to top div from Main section
+mainDivTop.appendChild(mainTitle);
+
+// Adding Elements to Main section
+mainSection.appendChild(mainDivTop);
 
 
 // Adding Elements to the Navigation Bar
@@ -175,15 +223,17 @@ nav.appendChild(linksDiv);
 hero.appendChild(heroDivL);
 hero.appendChild(heroDivR);
 
-// Adding Elements to Hero left div
+// Adding Elements to Hero left
 heroDivL.appendChild(headingText);
 heroDivL.appendChild(heroPar);
 heroDivL.appendChild(heroBtn);
 
+// Adding Elements to Hero right
 heroDivR.appendChild(imgHeroRight);
 
 
 
-// Adding Navigation Bar and Hero Section to the Body
+// Adding Elements to the Body
 document.body.appendChild(nav);
 document.body.appendChild(hero);
+document.body.appendChild(mainSection);

@@ -99,6 +99,9 @@ function heroSection() {
     let heroS = document.createElement('section');
     heroS.style.background = "#1f2937";
     heroS.style.width = "100%";
+    heroS.style.display = "flex";
+    heroS.style.justifyContent = "space-around";
+    heroS.style.alignContent = "center";
     return heroS;
 }
 let hero = heroSection();
@@ -106,10 +109,11 @@ let hero = heroSection();
 function heroDivLeft() {
     let divL = document.createElement('div');
     divL.style.background = "#1f2937";
-    divL.style.width = "50%";
+    // divL.style.width = "50%";
     return divL;
 }
 let heroDivL = heroDivLeft();
+
 
 // Hero Heading
 function heroHeading(text) {
@@ -145,17 +149,38 @@ function heroButton(text) {
 }
 let heroBtn = heroButton("Sing Up");
 
+function heroDivRight() {
+    let divR = document.createElement('div');
+    divR.style.background = "#1f2937";
+    // divR.style.width = "50%";
+    return divR;
+}
+let heroDivR = heroDivRight();
+
+function heroDivRightImg() {
+    let img = document.createElement('img');
+    img.setAttribute("src", "https://picsum.photos/520");
+    img.style.width = "100%";
+    img.style.maxHeight = "14.6875rem"
+    return img;
+}
+let imgHeroRight = heroDivRightImg();
+
+
 // Adding Elements to the Navigation Bar
 nav.appendChild(logoD);
 nav.appendChild(linksDiv);
 
 // Adding Elements to the Hero Section
 hero.appendChild(heroDivL);
+hero.appendChild(heroDivR);
 
 // Adding Elements to Hero left div
 heroDivL.appendChild(headingText);
 heroDivL.appendChild(heroPar);
 heroDivL.appendChild(heroBtn);
+
+heroDivR.appendChild(imgHeroRight);
 
 
 

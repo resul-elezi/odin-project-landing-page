@@ -115,6 +115,7 @@ function heroDivLeft() {
     let divL = document.createElement('div');
     divL.style.background = "#1f2937";
     divL.style.paddingLeft = "13.125rem";
+    divL.style.paddingRight = "3.4375rem";
     divL.style.width = "50%";
     return divL;
 }
@@ -143,19 +144,18 @@ function heroParagraph(text) {
 let heroPar = heroParagraph("This website has some subtext that goes here under the main title.It's a smaller font and the color is lower contrast");
 
 function heroButton(text) {
-    let btn = document.createElement('button');
-    btn.setAttribute("type", "submit");
+    let btn = document.createElement('a');
+    btn.setAttribute("href", "#");
     btn.style.backgroundColor = "#3882f6";
-    btn.style.cursor = "pointer";
     btn.style.color = "white";
-    btn.style.border = "none";
     btn.style.fontSize = "1.125rem";
+    btn.style.textDecoration = "none";
     btn.style.padding = ".5rem 2rem";
     btn.style.borderRadius = ".5rem";
     btn.innerText = text;
     return btn;
 }
-let heroBtn = heroButton("Sing Up");
+let heroBtn = heroButton("Click Me");
 
 function heroDivRight() {
     let divR = document.createElement('div');

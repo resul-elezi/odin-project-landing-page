@@ -99,30 +99,63 @@ function heroSection() {
     let heroS = document.createElement('section');
     heroS.style.background = "#1f2937";
     heroS.style.width = "100%";
-    // heroS.style.margin = "0";
     return heroS;
 }
 let hero = heroSection();
 
+function heroDivLeft() {
+    let divL = document.createElement('div');
+    divL.style.background = "#1f2937";
+    divL.style.width = "50%";
+    return divL;
+}
+let heroDivL = heroDivLeft();
+
 // Hero Heading
 function heroHeading(text) {
     let heading = document.createElement('h1');
+    heading.style.margin = "0"
     heading.style.color = "#f9faf8";
     heading.style.fontSize = "3rem";
     heading.innerText = text;
-    // heading.style.margin = "0";
     return heading;
 }
-// let heroH = heroHeading();
 let headingText = heroHeading("This Website is awesome");
 
+
+function heroParagraph(text) {
+    let par = document.createElement('p')
+    par.style.color = "#e5e7eb"
+    par.style.fontSize = "1.125rem";
+    par.innerText = text;
+    return par;
+}
+let heroPar = heroParagraph("This website has some subtext that goes here under the main title.It's a smaller font and the color is lower contrast");
+
+function heroButton(text) {
+    let btn = document.createElement('button');
+    btn.style.backgroundColor = "#3882f6";
+    btn.style.color = "white";
+    btn.style.border = "none";
+    btn.style.fontSize = "1.125rem";
+    btn.style.padding = ".5rem 2rem";
+    btn.style.borderRadius = ".5rem";
+    btn.innerText = text;
+    return btn;
+}
+let heroBtn = heroButton("Sing Up");
 
 // Adding Elements to the Navigation Bar
 nav.appendChild(logoD);
 nav.appendChild(linksDiv);
 
 // Adding Elements to the Hero Section
-hero.appendChild(headingText);
+hero.appendChild(heroDivL);
+
+// Adding Elements to Hero left div
+heroDivL.appendChild(headingText);
+heroDivL.appendChild(heroPar);
+heroDivL.appendChild(heroBtn);
 
 
 

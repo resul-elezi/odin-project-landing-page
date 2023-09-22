@@ -2,9 +2,10 @@
 
 // ------------- Body --------------
 function webPage(page) {
-    page.style.margin = "0";
+    page.style.margin = "0 auto";
     page.style.padding = "0";
-    page.style.maxWidth = "90rem";
+    page.style.maxWidth = "120rem";
+    page.style.backgroundColor = "#1f2937";
 }
 webPage(document.body);
 
@@ -13,6 +14,8 @@ function navBar() {
     let navigation = document.createElement('nav');
     navigation.style.background = "#1f2937";
     navigation.style.width = "100%";
+    navigation.style.maxWidth = "90rem"
+    navigation.style.margin = "0 auto"
     navigation.style.height = "4.25rem";
     navigation.style.display = "flex";
     navigation.style.justifyContent = "center";
@@ -101,7 +104,9 @@ linksDiv.appendChild(headerLinkThree);
 function heroSection() {
     let heroS = document.createElement('section');
     heroS.style.background = "#1f2937";
+    heroS.style.margin = "0 auto";
     heroS.style.width = "100%";
+    heroS.style.maxWidth = "90rem";
     heroS.style.paddingTop = "5.9375rem"
     heroS.style.paddingBottom = "8.125rem";
     heroS.style.display = "flex";
@@ -182,6 +187,7 @@ let imgHeroRight = heroDivRightImg();
 function mainS() {
     let main = document.createElement('main');
     main.style.width = "100%";
+    main.style.backgroundColor = "white";
     return main;
 }
 let mainSection = mainS();

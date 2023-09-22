@@ -229,6 +229,7 @@ let cardCtr = cardDiv();
 function cardOne() {
     let one = document.createElement('div');
     one.style.width = "10.625rem";
+    one.style.textAlign = "center";
     return one;
 }
 let card01 = cardOne();
@@ -238,6 +239,7 @@ function cardOneImg() {
     img.setAttribute("src", "https://picsum.photos/170");
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
+    img.style.borderRadius = "1rem";
     // img.style.width = "100%";
     return img;
 }
@@ -246,6 +248,8 @@ let card01Img = cardOneImg();
 function cardOneT(text) {
     let txt = document.createElement('p');
     txt.style.fontSize = "1.125rem";
+    txt.style.marginTop = ".625rem";
+    txt.style.marginBottom = "7.5rem";
     txt.innerText = text;
     return txt;
 }
@@ -261,6 +265,7 @@ card01.appendChild(card01Text);
 function cardTwo() {
     let two = document.createElement('div');
     two.style.width = "10.625rem";
+    two.style.textAlign = "center";
     return two;
 }
 let card02 = cardTwo();
@@ -270,6 +275,7 @@ function cardTwoImg() {
     img.setAttribute("src", "https://picsum.photos/170");
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
+    img.style.borderRadius = "1rem";
     // img.style.width = "100%";
     return img;
 }
@@ -278,6 +284,8 @@ let card02Img = cardTwoImg();
 function cardTwoT(text) {
     let txt = document.createElement('p');
     txt.style.fontSize = "1.125rem";
+    txt.style.marginTop = ".625rem";
+    txt.style.marginBottom = "7.5rem";
     txt.innerText = text;
     return txt;
 }
@@ -292,6 +300,7 @@ card02.appendChild(card02Text);
 function cardThree() {
     let three = document.createElement('div');
     three.style.width = "10.625rem";
+    three.style.textAlign = "center";
     return three;
 }
 let card03 = cardThree();
@@ -301,6 +310,7 @@ function cardThreeImg() {
     img.setAttribute("src", "https://picsum.photos/170");
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
+    img.style.borderRadius = "1rem";
     // img.style.width = "100%";
     return img;
 }
@@ -309,6 +319,8 @@ let card03Img = cardThreeImg();
 function cardThreeT(text) {
     let txt = document.createElement('p');
     txt.style.fontSize = "1.125rem";
+    txt.style.marginTop = ".625rem";
+    txt.style.marginBottom = "7.5rem";
     txt.innerText = text;
     return txt;
 }
@@ -323,6 +335,7 @@ card03.appendChild(card03Text);
 function cardFour() {
     let four = document.createElement('div');
     four.style.width = "10.625rem";
+    four.style.textAlign = "center";
     return four;
 }
 let card04 = cardFour();
@@ -332,6 +345,7 @@ function cardFourImg() {
     img.setAttribute("src", "https://picsum.photos/170");
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
+    img.style.borderRadius = "1rem";
     // img.style.width = "100%";
     return img;
 }
@@ -340,6 +354,8 @@ let card04Img = cardFourImg();
 function cardFourT(text) {
     let txt = document.createElement('p');
     txt.style.fontSize = "1.125rem";
+    txt.style.marginTop = ".625rem";
+    txt.style.marginBottom = "7.5rem";
     txt.innerText = text;
     return txt;
 }

@@ -252,16 +252,100 @@ let card01Text = cardOneT("this is some subtext under an illustration or image")
 card01.appendChild(card01Img);
 card01.appendChild(card01Text);
 
+
 // ---------- Card Two --------------
 
+function cardTwo() {
+    let two = document.createElement('div');
+    return two;
+}
+let card02 = cardTwo();
+
+function cardTwoImg() {
+    let img = document.createElement('img');
+    img.setAttribute("src", "https://picsum.photos/168");
+    img.setAttribute("alt", "Random Image");
+    img.style.maxWidth = "100%";
+    img.style.width = "100%";
+    return img;
+}
+let card02Img = cardTwoImg();
+
+function cardTwoT(text) {
+    let txt = document.createElement('p');
+    txt.style.fontSize = "1rem";
+    txt.innerText = text;
+    return txt;
+}
+let card02Text = cardTwoT("this is some subtext under an illustration or image");
+
+// Adding Elements to Card two
+card01.appendChild(card02Img);
+card01.appendChild(card02Text);
 
 // ---------- Card Three --------------
 
+function cardThree() {
+    let three = document.createElement('div');
+    return three;
+}
+let card03 = cardThree();
+
+function cardThreeImg() {
+    let img = document.createElement('img');
+    img.setAttribute("src", "https://picsum.photos/168");
+    img.setAttribute("alt", "Random Image");
+    img.style.maxWidth = "100%";
+    img.style.width = "100%";
+    return img;
+}
+let card03Img = cardThreeImg();
+
+function cardThreeT(text) {
+    let txt = document.createElement('p');
+    txt.style.fontSize = "1rem";
+    txt.innerText = text;
+    return txt;
+}
+let card03Text = cardThreeT("this is some subtext under an illustration or image");
+
+// Adding Elements to Card three
+card01.appendChild(card03Img);
+card01.appendChild(card03Text);
 
 // ---------- Card Four --------------
 
+function cardFour() {
+    let four = document.createElement('div');
+    return four;
+}
+let card04 = cardFour();
+
+function cardFourImg() {
+    let img = document.createElement('img');
+    img.setAttribute("src", "https://picsum.photos/168");
+    img.setAttribute("alt", "Random Image");
+    img.style.maxWidth = "100%";
+    img.style.width = "100%";
+    return img;
+}
+let card04Img = cardFourImg();
+
+function cardFourT(text) {
+    let txt = document.createElement('p');
+    txt.style.fontSize = "1rem";
+    txt.innerText = text;
+    return txt;
+}
+let card04Text = cardFourT("this is some subtext under an illustration or image");
+
+// Adding Elements to Card three
+card01.appendChild(card04Img);
+card01.appendChild(card04Text);
+
 //Adding Elements to Card div
 cardCtr.appendChild(card01);
+cardCtr.appendChild(card02);
 
 // Adding Elements to top div from Main section
 mainDivTop.appendChild(mainTitle);

@@ -214,8 +214,26 @@ function mainDivTopH(text) {
 }
 let mainTitle = mainDivTopH("Some random information.");
 
+function cardDiv() {
+    let card = document.createElement('div');
+    card.style.display = "flex";
+    card.style.justifyContent = "center";
+    return card;
+}
+let cardCtr = cardDiv();
+
+function cardOne() {
+    let one = document.createElement('div');
+    return one;
+}
+let card01 = cardOne();
+
+//Adding Elements to Card div
+cardCtr.appendChild(card01);
+
 // Adding Elements to top div from Main section
 mainDivTop.appendChild(mainTitle);
+mainDivTop.appendChild(cardCtr);
 
 // Adding Elements to Main section
 mainSection.appendChild(mainDivTop);

@@ -218,6 +218,8 @@ function cardDiv() {
     let card = document.createElement('div');
     card.style.display = "flex";
     card.style.justifyContent = "center";
+    card.style.alignItems = "center";
+    card.style.gap = "3.125rem";
     return card;
 }
 let cardCtr = cardDiv();
@@ -232,7 +234,7 @@ let card01 = cardOne();
 
 function cardOneImg() {
     let img = document.createElement('img');
-    img.setAttribute("src", "https://picsum.photos/168");
+    img.setAttribute("src", "https://picsum.photos/150");
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
     img.style.width = "100%";
@@ -263,7 +265,7 @@ let card02 = cardTwo();
 
 function cardTwoImg() {
     let img = document.createElement('img');
-    img.setAttribute("src", "https://picsum.photos/168");
+    img.setAttribute("src", "https://picsum.photos/150");
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
     img.style.width = "100%";
@@ -280,8 +282,8 @@ function cardTwoT(text) {
 let card02Text = cardTwoT("this is some subtext under an illustration or image");
 
 // Adding Elements to Card two
-card01.appendChild(card02Img);
-card01.appendChild(card02Text);
+card02.appendChild(card02Img);
+card02.appendChild(card02Text);
 
 // ---------- Card Three --------------
 
@@ -293,7 +295,7 @@ let card03 = cardThree();
 
 function cardThreeImg() {
     let img = document.createElement('img');
-    img.setAttribute("src", "https://picsum.photos/168");
+    img.setAttribute("src", "https://picsum.photos/150");
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
     img.style.width = "100%";
@@ -310,8 +312,8 @@ function cardThreeT(text) {
 let card03Text = cardThreeT("this is some subtext under an illustration or image");
 
 // Adding Elements to Card three
-card01.appendChild(card03Img);
-card01.appendChild(card03Text);
+card03.appendChild(card03Img);
+card03.appendChild(card03Text);
 
 // ---------- Card Four --------------
 
@@ -323,7 +325,7 @@ let card04 = cardFour();
 
 function cardFourImg() {
     let img = document.createElement('img');
-    img.setAttribute("src", "https://picsum.photos/168");
+    img.setAttribute("src", "https://picsum.photos/150");
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
     img.style.width = "100%";
@@ -339,13 +341,15 @@ function cardFourT(text) {
 }
 let card04Text = cardFourT("this is some subtext under an illustration or image");
 
-// Adding Elements to Card three
-card01.appendChild(card04Img);
-card01.appendChild(card04Text);
+// Adding Elements to Card four
+card04.appendChild(card04Img);
+card04.appendChild(card04Text);
 
 //Adding Elements to Card div
 cardCtr.appendChild(card01);
 cardCtr.appendChild(card02);
+cardCtr.appendChild(card03);
+cardCtr.appendChild(card04);
 
 // Adding Elements to top div from Main section
 mainDivTop.appendChild(mainTitle);

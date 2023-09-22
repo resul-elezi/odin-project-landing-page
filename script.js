@@ -222,11 +222,43 @@ function cardDiv() {
 }
 let cardCtr = cardDiv();
 
+// ---------- Card One --------------
+
 function cardOne() {
     let one = document.createElement('div');
     return one;
 }
 let card01 = cardOne();
+
+function cardOneImg() {
+    let img = document.createElement('img');
+    img.setAttribute("src", "https://picsum.photos/168");
+    img.setAttribute("alt", "Random Image");
+    img.style.maxWidth = "100%";
+    img.style.width = "100%";
+    return img;
+}
+let card01Img = cardOneImg();
+
+function cardOneT(text) {
+    let txt = document.createElement('p');
+    txt.style.fontSize = "1rem";
+    txt.innerText = text;
+    return txt;
+}
+let card01Text = cardOneT("this is some subtext under an illustration or image");
+
+// Adding Elements to Card one
+card01.appendChild(card01Img);
+card01.appendChild(card01Text);
+
+// ---------- Card Two --------------
+
+
+// ---------- Card Three --------------
+
+
+// ---------- Card Four --------------
 
 //Adding Elements to Card div
 cardCtr.appendChild(card01);

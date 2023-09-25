@@ -380,7 +380,12 @@ mainDivTop.appendChild(cardCtr);
 function mainDivB() {
     let main = document.createElement('div');
     main.style.width = "100%";
+    main.style.display = "flex";
+    main.style.flexDirection = "column";
+    main.style.justifyContent = "center";
+    main.style.alignItems = "center";
     main.style.backgroundColor = "#e5e7eb";
+    main.style.margin = "0 auto";
     return main;
 }
 let mainDivBottom = mainDivB();
@@ -390,6 +395,8 @@ function heroQ(text) {
     quote.style.color = "#1f2937";
     quote.style.fontSize = "2.25rem";
     quote.style.fontStyle = "italic";
+    quote.style.margin = "0";
+    quote.style.padding = "8.56rem 18.5rem 0 21.25rem";
     quote.innerText = text;
     return quote;
 }
@@ -399,10 +406,13 @@ function heroQP(text) {
     let par = document.createElement('p');
     par.style.fontSize = "2rem";
     par.style.fontWeight = "bold";
-    par.innerText = text;
+    par.style.alignSelf = "end";
+    par.style.margin = "0";
+    par.style.padding = "0 18.5rem 6.375rem 0";
+    par.innerHTML = text;
     return par;
 }
-let heroQuoteParagraph = heroQP(`-Resul, <cite>The introvert Coder</cite>`);
+let heroQuoteParagraph = heroQP("-Resul, <cite>The introvert Coder</cite>");
 
 
 // Adding Element to Main section bottom

@@ -396,7 +396,7 @@ function heroQ(text) {
     quote.style.fontSize = "2.25rem";
     quote.style.fontStyle = "italic";
     quote.style.margin = "0";
-    quote.style.padding = "8.56rem 18.5rem 0 21.25rem";
+    quote.style.padding = "8.56rem 19rem 0";
     quote.innerText = text;
     return quote;
 }
@@ -408,7 +408,7 @@ function heroQP(text) {
     par.style.fontWeight = "bold";
     par.style.alignSelf = "end";
     par.style.margin = "0";
-    par.style.padding = "0 18.5rem 6.375rem 0";
+    par.style.padding = "0 19rem 6.375rem 0";
     par.innerHTML = text;
     return par;
 }

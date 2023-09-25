@@ -188,6 +188,7 @@ function mainS() {
     let main = document.createElement('main');
     main.style.width = "100%";
     main.style.backgroundColor = "white";
+    main.style.margin = "0 auto";
     return main;
 }
 let mainSection = mainS();
@@ -385,7 +386,6 @@ function mainDivB() {
     main.style.justifyContent = "center";
     main.style.alignItems = "center";
     main.style.backgroundColor = "#e5e7eb";
-    main.style.margin = "0 auto";
     return main;
 }
 let mainDivBottom = mainDivB();

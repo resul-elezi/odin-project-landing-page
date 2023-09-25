@@ -380,11 +380,23 @@ mainDivTop.appendChild(cardCtr);
 function mainDivB() {
     let main = document.createElement('div');
     main.style.width = "100%";
-    main.style.height = "5rem";
     main.style.backgroundColor = "#e5e7eb";
     return main;
 }
 let mainDivBottom = mainDivB();
+
+function heroQ(text) {
+    let quote = document.createElement('blockquote');
+    quote.style.color = "#1f2937";
+    quote.style.fontSize = "2.25rem";
+    quote.style.fontStyle = "italic";
+    quote.innerText = text;
+    return quote;
+}
+let quoteText = heroQ("This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.");
+
+// Adding Element to Main section bottom
+mainDivBottom.appendChild(quoteText);
 
 // Adding Elements to Main section
 mainSection.appendChild(mainDivTop);

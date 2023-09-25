@@ -371,12 +371,24 @@ cardCtr.appendChild(card02);
 cardCtr.appendChild(card03);
 cardCtr.appendChild(card04);
 
-// Adding Elements to top div from Main section
+// Adding Elements to Main section top div
 mainDivTop.appendChild(mainTitle);
 mainDivTop.appendChild(cardCtr);
 
+// Main Section Bottom 
+
+function mainDivB() {
+    let main = document.createElement('div');
+    main.style.width = "100%";
+    main.style.height = "5rem";
+    main.style.backgroundColor = "#e5e7eb";
+    return main;
+}
+let mainDivBottom = mainDivB();
+
 // Adding Elements to Main section
 mainSection.appendChild(mainDivTop);
+mainSection.appendChild(mainDivBottom);
 
 
 // Adding Elements to the Navigation Bar

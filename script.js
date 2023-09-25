@@ -414,7 +414,28 @@ function heroQP(text) {
 }
 let heroQuoteParagraph = heroQP("-Resul, <cite>The introvert Coder</cite>");
 
+// ---------- Call to action section --------------
 
+function callToActionSection() {
+    let section = document.createElement('section');
+    section.style.backgroundColor = "white";
+    return section;
+}
+let ctaSection = callToActionSection();
+
+function callToActionDiv() {
+    let div = document.createElement('div');
+    div.style.backgroundColor = "#3882f6";
+    return div;
+}
+let ctaDiv = callToActionDiv();
+
+// Adding Element to CTA section
+ctaSection.appendChild(ctaDiv);
+
+function callToActionHeading() {
+    
+}
 // Adding Element to Main section bottom
 mainDivBottom.appendChild(quoteText);
 mainDivBottom.appendChild(heroQuoteParagraph);
@@ -422,6 +443,7 @@ mainDivBottom.appendChild(heroQuoteParagraph);
 // Adding Elements to Main section
 mainSection.appendChild(mainDivTop);
 mainSection.appendChild(mainDivBottom);
+mainSection.appendChild(ctaSection);
 
 
 // Adding Elements to the Navigation Bar

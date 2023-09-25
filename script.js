@@ -426,16 +426,29 @@ let ctaSection = callToActionSection();
 function callToActionDiv() {
     let div = document.createElement('div');
     div.style.backgroundColor = "#3882f6";
+    div.style.display = "flex";
+    div.style.justifyContent = "center";
+    div.style.alignItems = "center";
     return div;
 }
 let ctaDiv = callToActionDiv();
 
+
+function callToActionHeading(text) {
+    let heading = document.createElement('h4');
+    heading.style.color = "white";
+    heading.style.fontSize = "2rem";
+    heading.innerText = text;
+    return heading;
+}
+let ctaHeading = callToActionHeading("Call to action! It's time!")
+
+// Adding Elements to CTA div
+ctaDiv.appendChild(ctaHeading);
+
 // Adding Element to CTA section
 ctaSection.appendChild(ctaDiv);
 
-function callToActionHeading() {
-    
-}
 // Adding Element to Main section bottom
 mainDivBottom.appendChild(quoteText);
 mainDivBottom.appendChild(heroQuoteParagraph);

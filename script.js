@@ -419,6 +419,10 @@ let heroQuoteParagraph = heroQP("-Resul, <cite>The introvert Coder</cite>");
 function callToActionSection() {
     let section = document.createElement('section');
     section.style.backgroundColor = "white";
+    section.style.display = "flex";
+    section.style.justifyContent = "center";
+    section.style.alignItems = "center";
+    section.style.padding = "6.25rem 0";
     return section;
 }
 let ctaSection = callToActionSection();

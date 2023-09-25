@@ -395,8 +395,19 @@ function heroQ(text) {
 }
 let quoteText = heroQ("This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.");
 
+function heroQP(text) {
+    let par = document.createElement('p');
+    par.style.fontSize = "2rem";
+    par.style.fontWeight = "bold";
+    par.innerText = text;
+    return par;
+}
+let heroQuoteParagraph = heroQP(`-Resul, <cite>The introvert Coder</cite>`);
+
+
 // Adding Element to Main section bottom
 mainDivBottom.appendChild(quoteText);
+mainDivBottom.appendChild(heroQuoteParagraph);
 
 // Adding Elements to Main section
 mainSection.appendChild(mainDivTop);

@@ -498,7 +498,8 @@ let ctaParagraph = callToActionParagraph("Fork my repository by clicking that bu
 
 function ctaBtn(text) {
     let btn = document.createElement('a');
-    btn.setAttribute("href", "#");
+    btn.setAttribute("href", "https://github.com/resul-elezi/odin-project-landing-page");
+    btn.setAttribute("target", "_blank");
     btn.innerText = text;
     btn.style.color = "white";
     btn.style.fontSize = "1.125rem";

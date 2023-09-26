@@ -69,7 +69,7 @@ function navLink1(text) {
     link1.style.color = "#e5e7eb";
     link1.style.fontSize = "1.125rem";
     link1.innerText = text;
-    link1.setAttribute("href", "#");
+    link1.setAttribute("href", "#main");
     link1.style.textDecoration = "none";
     return link1;
 }
@@ -78,7 +78,7 @@ function navLink2(text) {
     link2.style.color = "#e5e7eb";
     link2.style.fontSize = "1.125rem";
     link2.innerText = text;
-    link2.setAttribute("href", "#");
+    link2.setAttribute("href", "#quote");
     link2.style.textDecoration = "none";
     return link2;
 }
@@ -88,15 +88,15 @@ function navLink3(text) {
     link3.style.fontSize = "1.125rem";
     link3.innerText = text;
     link3.style.textDecoration = "none";
-    link3.setAttribute("href", "#");
+    link3.setAttribute("href", "#cta");
     return link3;
 }
 let link1 = navLink1();
 let link2 = navLink2();
 let link3 = navLink3();
-let headerLinkOne = navLink1("Header Link One");
-let headerLinkTwo = navLink2("Header Link Two");
-let headerLinkThree = navLink3("Header Link Three");
+let headerLinkOne = navLink1("Main section");
+let headerLinkTwo = navLink2("Quote section");
+let headerLinkThree = navLink3("CTA section");
 linksDiv.appendChild(headerLinkOne);
 linksDiv.appendChild(headerLinkTwo);
 linksDiv.appendChild(headerLinkThree);
@@ -164,7 +164,7 @@ function heroButton(text) {
     btn.innerText = text;
     return btn;
 }
-let heroBtn = heroButton("Click Me");
+let heroBtn = heroButton("Show code");
 
 function heroDivRight() {
     let divR = document.createElement('div');
@@ -196,6 +196,13 @@ function mainS() {
     return main;
 }
 let mainSection = mainS();
+
+function jumpLinkM() {
+    let link = document.createElement('a');
+    link.setAttribute("id", "main");
+    return link;
+}
+let linkForMain = jumpLinkM();
 
 // Main Section Top 
 
@@ -377,6 +384,7 @@ cardCtr.appendChild(card03);
 cardCtr.appendChild(card04);
 
 // Adding Elements to Main section top div
+mainDivTop.appendChild(linkForMain);
 mainDivTop.appendChild(mainTitle);
 mainDivTop.appendChild(cardCtr);
 
@@ -393,6 +401,13 @@ function mainDivB() {
     return main;
 }
 let mainDivBottom = mainDivB();
+
+function jumpLinkQ() {
+    let link = document.createElement('a');
+    link.setAttribute("id", "quote");
+    return link;
+}
+let linkForQuote = jumpLinkQ();
 
 function heroQ(text) {
     let quote = document.createElement('blockquote');
@@ -430,6 +445,13 @@ function callToActionSection() {
     return section;
 }
 let ctaSection = callToActionSection();
+
+function jumpLinkCta() {
+    let link = document.createElement('a');
+    link.setAttribute("id", "cta");
+    return link;
+}
+let linkForCTA = jumpLinkCta();
 
 function callToActionDiv() {
     let div = document.createElement('div');
@@ -501,6 +523,7 @@ function footerS() {
 }
 let footer = footerS();
 
+
 function copyRight(text) {
     let copy = document.createElement('p');
     copy.style.color = "white";
@@ -522,9 +545,11 @@ ctaDiv.appendChild(ctaTextDiv);
 ctaDiv.appendChild(ctaButton);
 
 // Adding Element to CTA section
+ctaSection.appendChild(linkForCTA);
 ctaSection.appendChild(ctaDiv);
 
 // Adding Element to Main section bottom
+mainDivBottom.appendChild(linkForQuote);
 mainDivBottom.appendChild(quoteText);
 mainDivBottom.appendChild(heroQuoteParagraph);
 

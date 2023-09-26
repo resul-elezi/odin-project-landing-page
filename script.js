@@ -4,8 +4,11 @@
 function webPage(page) {
     page.style.margin = "0 auto";
     page.style.padding = "0";
+    page.style.minHeight = "100vh";
     page.style.maxWidth = "120rem";
     page.style.backgroundColor = "#1f2937";
+    page.style.display = "flex";
+    page.style.flexDirection = "column";
 }
 webPage(document.body);
 
@@ -483,6 +486,27 @@ function ctaBtn(text) {
 }
 let ctaButton = ctaBtn("Sign up");
 
+// ---------- Footer ----------
+
+function footerS() {
+    let footer = document.createElement('footer');
+    footer.style.background = "#1f2937";
+    footer.style.width = "100%";
+    return footer;
+}
+let footer = footerS();
+
+function copyRight(text) {
+    let copy = document.createElement('p');
+    copy.style.color = "white";
+    copy.innerHTML = text;
+    return copy;
+}
+let copyRightText = copyRight("Copyright &copy; Resul Elezi 2023");
+
+// Adding Element to Footer
+footer.appendChild(copyRightText)
+
 // Adding Elements to CTA text div
 ctaTextDiv.appendChild(ctaHeading);
 ctaTextDiv.appendChild(ctaParagraph);
@@ -526,3 +550,4 @@ heroDivR.appendChild(imgHeroRight);
 document.body.appendChild(nav);
 document.body.appendChild(hero);
 document.body.appendChild(mainSection);
+document.body.appendChild(footer);

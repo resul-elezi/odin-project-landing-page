@@ -433,13 +433,24 @@ function callToActionDiv() {
     div.style.display = "flex";
     div.style.justifyContent = "center";
     div.style.alignItems = "center";
+    div.style.padding = "3.125rem 7.5rem";
+    div.style.borderRadius = ".5rem";
+    div.style.gap = "10rem";
     return div;
 }
 let ctaDiv = callToActionDiv();
 
+function callToActionTextDiv() {
+    let div = document.createElement('div');
+    div.style.display = "flex";
+    div.style.flexDirection = "column";
+    return div;
+}
+let ctaTextDiv = callToActionTextDiv();
 
 function callToActionHeading(text) {
     let heading = document.createElement('h4');
+    heading.style.marginBlock = "0";
     heading.style.color = "white";
     heading.style.fontSize = "2rem";
     heading.innerText = text;
@@ -447,8 +458,38 @@ function callToActionHeading(text) {
 }
 let ctaHeading = callToActionHeading("Call to action! It's time!")
 
+
+function callToActionParagraph(text) {
+    let par = document.createElement('p');
+    par.style.marginBlock = "0";
+    par.style.color = "#e5e7eb";
+    par.style.fontSize = "1.125rem";
+    par.innerText = text;
+    return par;
+}
+let ctaParagraph = callToActionParagraph("Sign up for our product by clicking that button right over there!")
+
+function ctaBtn(text) {
+    let btn = document.createElement('a');
+    btn.setAttribute("href", "#");
+    btn.innerText = text;
+    btn.style.color = "white";
+    btn.style.fontSize = "1.125rem";
+    btn.style.border = "1.5px solid white";
+    btn.style.padding = ".25rem 2rem";
+    btn.style.borderRadius = ".3125rem";
+    btn.style.textDecoration = "none";
+    return btn;
+}
+let ctaButton = ctaBtn("Sign up");
+
+// Adding Elements to CTA text div
+ctaTextDiv.appendChild(ctaHeading);
+ctaTextDiv.appendChild(ctaParagraph);
+
 // Adding Elements to CTA div
-ctaDiv.appendChild(ctaHeading);
+ctaDiv.appendChild(ctaTextDiv);
+ctaDiv.appendChild(ctaButton);
 
 // Adding Element to CTA section
 ctaSection.appendChild(ctaDiv);

@@ -144,7 +144,7 @@ let headingText = heroHeading("This Website is awesome");
 function heroParagraph(text) {
     let par = document.createElement('p')
     par.style.color = "#e5e7eb"
-    par.style.marginBlock = "1rem"
+    par.style.margin = ".25rem 0 1rem 0"
     par.style.fontSize = "1.125rem";
     par.innerText = text;
     return par;
@@ -507,7 +507,7 @@ function ctaBtn(text) {
     btn.style.textDecoration = "none";
     return btn;
 }
-let ctaButton = ctaBtn("Sign up");
+let ctaButton = ctaBtn("Fork now");
 
 // ---------- Footer ----------
 

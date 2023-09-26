@@ -141,19 +141,20 @@ function heroHeading(text) {
 }
 let headingText = heroHeading("This Website is awesome");
 
-
 function heroParagraph(text) {
     let par = document.createElement('p')
     par.style.color = "#e5e7eb"
+    par.style.marginBlock = "1rem"
     par.style.fontSize = "1.125rem";
     par.innerText = text;
     return par;
 }
-let heroPar = heroParagraph("This website has some subtext that goes here under the main title.It's a smaller font and the color is lower contrast");
+let heroPar = heroParagraph("Because this page is created only with JavaScript. To see the source code click on the button");
 
 function heroButton(text) {
     let btn = document.createElement('a');
     btn.setAttribute("href", "#");
+    btn.style.display = "inline-block";
     btn.style.backgroundColor = "#3882f6";
     btn.style.color = "white";
     btn.style.fontSize = "1.125rem";
@@ -243,7 +244,7 @@ function cardOneImg() {
     img.setAttribute("src", "https://picsum.photos/170");
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
-    img.style.borderRadius = "1rem";
+    img.style.borderRadius = ".5rem";
     // img.style.width = "100%";
     return img;
 }
@@ -279,7 +280,7 @@ function cardTwoImg() {
     img.setAttribute("src", "https://picsum.photos/170");
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
-    img.style.borderRadius = "1rem";
+    img.style.borderRadius = ".5rem";
     // img.style.width = "100%";
     return img;
 }
@@ -314,7 +315,7 @@ function cardThreeImg() {
     img.setAttribute("src", "https://picsum.photos/170");
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
-    img.style.borderRadius = "1rem";
+    img.style.borderRadius = ".5rem";
     // img.style.width = "100%";
     return img;
 }
@@ -349,7 +350,7 @@ function cardFourImg() {
     img.setAttribute("src", "https://picsum.photos/170");
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
-    img.style.borderRadius = "1rem";
+    img.style.borderRadius = ".5rem";
     // img.style.width = "100%";
     return img;
 }
@@ -470,7 +471,7 @@ function callToActionParagraph(text) {
     par.innerText = text;
     return par;
 }
-let ctaParagraph = callToActionParagraph("Sign up for our product by clicking that button right over there!")
+let ctaParagraph = callToActionParagraph("Fork my repository by clicking that button right over there!")
 
 function ctaBtn(text) {
     let btn = document.createElement('a');
@@ -478,9 +479,9 @@ function ctaBtn(text) {
     btn.innerText = text;
     btn.style.color = "white";
     btn.style.fontSize = "1.125rem";
-    btn.style.border = "1.5px solid white";
+    btn.style.border = "1px solid white";
     btn.style.padding = ".25rem 2rem";
-    btn.style.borderRadius = ".3125rem";
+    btn.style.borderRadius = ".5rem";
     btn.style.textDecoration = "none";
     return btn;
 }
@@ -492,6 +493,10 @@ function footerS() {
     let footer = document.createElement('footer');
     footer.style.background = "#1f2937";
     footer.style.width = "100%";
+    footer.style.paddingBlock = "3.125rem";
+    footer.style.display = "flex";
+    footer.style.justifyContent = "center";
+    footer.style.alignItems = "center";
     return footer;
 }
 let footer = footerS();
@@ -499,6 +504,7 @@ let footer = footerS();
 function copyRight(text) {
     let copy = document.createElement('p');
     copy.style.color = "white";
+    copy.style.fontSize = "1.125rem";
     copy.innerHTML = text;
     return copy;
 }

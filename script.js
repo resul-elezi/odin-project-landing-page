@@ -153,7 +153,8 @@ let heroPar = heroParagraph("Because this page is created only with JavaScript. 
 
 function heroButton(text) {
     let btn = document.createElement('a');
-    btn.setAttribute("href", "#");
+    btn.setAttribute("href", "https://github.com/resul-elezi/odin-project-landing-page/blob/main/script.js");
+    btn.setAttribute("target", "_blank");
     btn.style.display = "inline-block";
     btn.style.backgroundColor = "#3882f6";
     btn.style.color = "white";

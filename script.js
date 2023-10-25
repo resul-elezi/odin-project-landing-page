@@ -194,16 +194,10 @@ function mainS() {
     main.style.width = "100%";
     main.style.backgroundColor = "white";
     main.style.margin = "0 auto";
+    main.setAttribute("id", "main");
     return main;
 }
 let mainSection = mainS();
-
-function jumpLinkM() {
-    let link = document.createElement('a');
-    link.setAttribute("id", "main");
-    return link;
-}
-let linkForMain = jumpLinkM();
 
 // Main Section Top 
 
@@ -385,7 +379,6 @@ cardCtr.appendChild(card03);
 cardCtr.appendChild(card04);
 
 // Adding Elements to Main section top div
-mainDivTop.appendChild(linkForMain);
 mainDivTop.appendChild(mainTitle);
 mainDivTop.appendChild(cardCtr);
 
@@ -403,13 +396,6 @@ function mainDivB() {
 }
 let mainDivBottom = mainDivB();
 
-function jumpLinkQ() {
-    let link = document.createElement('a');
-    link.setAttribute("id", "quote");
-    return link;
-}
-let linkForQuote = jumpLinkQ();
-
 function heroQ(text) {
     let quote = document.createElement('blockquote');
     quote.style.color = "#1f2937";
@@ -418,6 +404,7 @@ function heroQ(text) {
     quote.style.margin = "0";
     quote.style.padding = "8.56rem 19rem 0";
     quote.innerText = text;
+    quote.setAttribute("id", "quote");
     return quote;
 }
 let quoteText = heroQ("This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.");
@@ -551,7 +538,6 @@ ctaSection.appendChild(linkForCTA);
 ctaSection.appendChild(ctaDiv);
 
 // Adding Element to Main section bottom
-mainDivBottom.appendChild(linkForQuote);
 mainDivBottom.appendChild(quoteText);
 mainDivBottom.appendChild(heroQuoteParagraph);
 

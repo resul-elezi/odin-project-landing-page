@@ -430,16 +430,10 @@ function callToActionSection() {
     section.style.justifyContent = "center";
     section.style.alignItems = "center";
     section.style.padding = "6.25rem 0";
+    section.setAttribute("id", "cta");
     return section;
 }
 let ctaSection = callToActionSection();
-
-function jumpLinkCta() {
-    let link = document.createElement('a');
-    link.setAttribute("id", "cta");
-    return link;
-}
-let linkForCTA = jumpLinkCta();
 
 function callToActionDiv() {
     let div = document.createElement('div');
@@ -534,7 +528,6 @@ ctaDiv.appendChild(ctaTextDiv);
 ctaDiv.appendChild(ctaButton);
 
 // Adding Element to CTA section
-ctaSection.appendChild(linkForCTA);
 ctaSection.appendChild(ctaDiv);
 
 // Adding Element to Main section bottom

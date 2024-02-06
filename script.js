@@ -514,7 +514,7 @@ function copyRight(text) {
     copy.innerHTML = text;
     return copy;
 }
-let copyRightText = copyRight("Copyright &copy; Resul Elezi 2023");
+let copyRightText = copyRight("Copyright &copy; Resul Elezi 2024");
 
 // Adding Element to Footer
 footer.appendChild(copyRightText)

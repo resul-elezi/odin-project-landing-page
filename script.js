@@ -514,7 +514,8 @@ function copyRight(text) {
     copy.innerHTML = text;
     return copy;
 }
-let copyRightText = copyRight("Copyright &copy; Resul Elezi 2024");
+let year = new Date().getFullYear().toString();
+let copyRightText = copyRight("Copyright &copy; Resul Elezi " + `${year}`);
 
 // Adding Element to Footer
 footer.appendChild(copyRightText)

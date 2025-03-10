@@ -291,7 +291,6 @@ card02.appendChild(card02Img);
 card02.appendChild(card02Text);
 
 // ---------- Card Three --------------
-
 function cardThree() {
     let three = document.createElement('div');
     three.style.width = "10.625rem";

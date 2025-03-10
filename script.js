@@ -474,7 +474,6 @@ function ctaBtn(text) {
 let ctaButton = ctaBtn("Fork now");
 
 // ---------- Footer ----------
-
 function footerS() {
     let footer = document.createElement('footer');
     footer.style.background = "#1f2937";

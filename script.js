@@ -324,7 +324,6 @@ card03.appendChild(card03Img);
 card03.appendChild(card03Text);
 
 // ---------- Card Four --------------
-
 function cardFour() {
     let four = document.createElement('div');
     four.style.width = "10.625rem";

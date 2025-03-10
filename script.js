@@ -225,7 +225,6 @@ function cardDiv() {
 let cardCtr = cardDiv();
 
 // ---------- Card One --------------
-
 function cardOne() {
     let one = document.createElement('div');
     one.style.width = "10.625rem";

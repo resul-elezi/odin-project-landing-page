@@ -486,7 +486,6 @@ function footerS() {
 }
 let footer = footerS();
 
-
 function copyRight(text) {
     let copy = document.createElement('p');
     copy.style.color = "white";
@@ -520,7 +519,6 @@ mainSection.appendChild(mainDivTop);
 mainSection.appendChild(mainDivBottom);
 mainSection.appendChild(ctaSection);
 
-
 // Adding Elements to the Navigation Bar
 nav.appendChild(logoD);
 nav.appendChild(linksDiv);
@@ -536,8 +534,6 @@ heroDivL.appendChild(heroBtn);
 
 // Adding Elements to Hero right
 heroDivR.appendChild(imgHeroRight);
-
-
 
 // Adding Elements to the Body
 document.body.appendChild(nav);

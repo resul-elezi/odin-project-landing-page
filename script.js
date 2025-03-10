@@ -367,7 +367,6 @@ mainDivTop.appendChild(mainTitle);
 mainDivTop.appendChild(cardCtr);
 
 // Main Section Bottom 
-
 function mainDivB() {
     let main = document.createElement('div');
     main.style.width = "100%";

@@ -126,7 +126,6 @@ function heroDivLeft() {
 }
 let heroDivL = heroDivLeft();
 
-
 // Hero Heading
 function heroHeading(text) {
     let heading = document.createElement('h1');

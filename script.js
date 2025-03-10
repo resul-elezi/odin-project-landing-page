@@ -448,7 +448,6 @@ function callToActionHeading(text) {
 }
 let ctaHeading = callToActionHeading("Call to action! It's time!")
 
-
 function callToActionParagraph(text) {
     let par = document.createElement('p');
     par.style.marginBlock = "0";

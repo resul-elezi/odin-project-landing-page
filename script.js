@@ -257,9 +257,7 @@ let card01Text = cardOneT("this is some subtext under an illustration or image")
 card01.appendChild(card01Img);
 card01.appendChild(card01Text);
 
-
 // ---------- Card Two --------------
-
 function cardTwo() {
     let two = document.createElement('div');
     two.style.width = "10.625rem";

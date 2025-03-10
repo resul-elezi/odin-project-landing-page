@@ -194,7 +194,6 @@ function mainS() {
 let mainSection = mainS();
 
 // Main Section Top 
-
 function mainDivT() {
     let main = document.createElement('div');
     main.style.width = "100%";

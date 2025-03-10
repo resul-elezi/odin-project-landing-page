@@ -405,7 +405,6 @@ function heroQP(text) {
 let heroQuoteParagraph = heroQP("-Resul, <cite>The introvert Coder</cite>");
 
 // ---------- Call to action section --------------
-
 function callToActionSection() {
     let section = document.createElement('section');
     section.style.backgroundColor = "white";

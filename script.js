@@ -305,7 +305,6 @@ function cardThreeImg() {
     img.setAttribute("alt", "Random Image");
     img.style.maxWidth = "100%";
     img.style.borderRadius = ".5rem";
-    // img.style.width = "100%";
     return img;
 }
 let card03Img = cardThreeImg();

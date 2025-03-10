@@ -182,9 +182,7 @@ function heroDivRightImg() {
 }
 let imgHeroRight = heroDivRightImg();
 
-
 // -------------- Main Section ---------------------------
-
 function mainS() {
     let main = document.createElement('main');
     main.style.width = "100%";

@@ -27,7 +27,6 @@ function navBar() {
 }
 let nav = navBar();
 
-
 // NavElements
 function logoDiv() {
     let div = document.createElement('div');
@@ -100,8 +99,6 @@ let headerLinkThree = navLink3("CTA section");
 linksDiv.appendChild(headerLinkOne);
 linksDiv.appendChild(headerLinkTwo);
 linksDiv.appendChild(headerLinkThree);
-
-
 
 // -------------- Hero Section ---------------------------
 function heroSection() {
